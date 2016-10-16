@@ -6,12 +6,16 @@
 #include <iostream>
 #include "Vector2D.h"
 #include "collision/Circle.h"
+#include "collision/Rectangle.h"
 
 int main() {
     std::cout << "We finna make some boxes hit shit" << std::endl;
     Vector2D unity;
     std::cout << unity.toString() << std::endl;
-    Circle c(0, 0, 10.);
+    Circle c(0, 0, 10.0f);
+    Rectangle r(100.0f, 100.0f, 100.0f, 50.0f);
     std::cout << c.toString() << std::endl;
-    return EXIT_SUCCESS;
+    std::cout << r.toString() << std::endl;
+
+    return 0;
 }

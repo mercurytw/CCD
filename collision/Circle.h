@@ -22,7 +22,7 @@ public:
 
     ~Circle() {
         std::cout << "I have no class members on the heap, and "
-                "no system resources, so this dtor doesnt need to exist!";
+                "no system resources, so this dtor doesnt need to exist!\n";
     }
 
     /*!
@@ -41,3 +41,12 @@ public:
 
 
 #endif //CCD_CIRCLE_H
+//
+//- Linux Kernel Development
+//        by Robert Love ( 3rd Ed. )
+//
+//- Professional LINUX Kernel Architecture
+//by Wolfgang Mauerer
+//
+//- LINUX Device Drivers
+//        by J. Corbet, A. Rubini and G. Kroah-Hartman
