@@ -7,6 +7,7 @@
 #include "Vector2D.h"
 #include "collision/Circle.h"
 #include "collision/Rectangle.h"
+#include "collision/collision.h"
 
 int main() {
     std::cout << "We finna make some boxes hit shit" << std::endl;
@@ -16,6 +17,11 @@ int main() {
     Rectangle r(100.0f, 100.0f, 100.0f, 50.0f);
     std::cout << c.toString() << std::endl;
     std::cout << r.toString() << std::endl;
+
+//    collision::checkCollision(c, c);
+//    collision::checkCollision(r, r);
+//    collision::checkCollision(r, c);
+//    collision::checkCollision(c, r);
 
     return 0;
 }

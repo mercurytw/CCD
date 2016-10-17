@@ -6,6 +6,8 @@
 
 #include "Rectangle.h"
 
+int Rectangle::colliderId = 2;
+
 std::string Rectangle::toString() const {
     std::stringstream ss;
     ss << "\"Rectangle\": {\n\t";
@@ -14,7 +16,5 @@ std::string Rectangle::toString() const {
     ss << "\"width\": " << width << ",\n\t";
     ss << "\"height\": " << height << "\n";
     ss << "}";
-    std::string tmp = ss.str();
-    std::cout << &tmp;
-    return tmp;
+    return ss.str();
 }

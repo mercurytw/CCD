@@ -6,9 +6,11 @@
 #include <cmath>
 #include <iostream>
 #include "../Vector2D.h"
+#include "AbstractCollider.h"
 
 class Circle {
 public:
+    static int colliderId;
     Vector2D position;
     float radius;
 
@@ -25,6 +27,8 @@ public:
                 "no system resources, so this dtor doesnt need to exist!\n";
     }
 
+    int getColliderId() const { return Circle::colliderId; }
+
     /*!
      * Nyaa this function is declared const!
      * This is a promise to the optimizing compiler that
@@ -39,14 +43,4 @@ public:
     std::string toString() const;
 };
 
-
 #endif //CCD_CIRCLE_H
-//
-//- Linux Kernel Development
-//        by Robert Love ( 3rd Ed. )
-//
-//- Professional LINUX Kernel Architecture
-//by Wolfgang Mauerer
-//
-//- LINUX Device Drivers
-//        by J. Corbet, A. Rubini and G. Kroah-Hartman

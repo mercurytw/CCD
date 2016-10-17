@@ -9,8 +9,11 @@
 
 #include <iostream>
 #include "../Vector2D.h"
+#include "AbstractCollider.h"
+
 class Rectangle {
 public:
+    static int colliderId;
     Vector2D position;
     float width;
     float height;
@@ -30,6 +33,8 @@ public:
     inline float area() const {
         return width * height;
     }
+
+    int getColliderId() const { return Rectangle::colliderId; }
 
     std::string toString() const;
 };

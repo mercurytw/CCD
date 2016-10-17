@@ -6,6 +6,8 @@
 
 #include "Circle.h"
 
+int Circle::colliderId = 1;
+
 std::string Circle::toString() const {
     std::stringstream ss;
     ss << "\"Circle\": {\n\t";
